@@ -1,0 +1,88 @@
+.formulario{
+    display: flex;
+    flex-direction: column;
+
+    width: 700px;
+    gap: 15px;
+}
+
+.lbl-txt{               /*chamada de clase, sempre com ponto na frente*/
+    font-weight: bold;  /*fonte texto*/
+    font-size: 16px;    /*tamanho da fonte*/
+
+}
+
+#titulo, #descricao {    /*chamada para id, sempe com #*/
+    width: 100%;
+    padding: 10px;         /*espaciamento interno*/
+    border: 1px solid #ccc;
+    border-radius: 5px;     /*Arredondar bordas*/
+    font-size: 16px;
+    background-color: #eee; /*cor do fundo das caixas*/
+}
+
+#descricao {
+    height: 100px;
+    resize: none;       /*bloqueamos redimenzionar a caixa*/
+}
+
+.add-imagens {
+    background: none;
+    border: 2px solid #007bff;
+    padding: 10px;
+    color:#007bff;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.add-imagens:hover { /*quando passar o mouse no botão */
+    background-color: #007bff;  /*muda cor do fundo do botão*/
+    color: white;       /*muda cor do texto*/
+    cursor: pointer;    /*muda o cursor para maosinha*/
+}
+
+.btn-criar {
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.btn-criar:hover {
+    background-color: #0056B3;
+    cursor: pointer;
+}
+
+.img-container {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+.img-container img {
+    width: 180px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* .nenhum {
+    display: none;
+} */
+
+.cx-alerta {
+    position: fixed;
+    top: 100px;
+    right: 100px;
+    background-color: #f1f382;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    max-width: 300px; /*maximo de largura*/
+    display: none; /*começa oculto*/
+}
