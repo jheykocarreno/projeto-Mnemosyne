@@ -183,3 +183,38 @@
 
 
 //3- Cálculo de IMC
+// let peso = parseFloat(prompt("Inserior seu peso. ex.: 70.5"));
+// let altura = parseFloat(prompt("Inserir sua altura. ex.: 1.70"));
+// let imc = peso / altura**2;
+
+// console.log("Teu IMC é de " + imc);
+
+// if (imc < 18.5){
+//     console.log("Magreza");
+// }
+// if (imc >= 18.5 && imc < 25){
+//     console.log("Normal");
+// }
+// if (imc >= 25 && imc < 30){
+//     console.log("Sobrepeso");
+// }
+// if (imc >= 30 && imc < 40){
+//     console.log("Obesidade");
+// }
+// if (imc >= 40){
+//     console.log("Obesidade grave");
+// }
+
+
+//4- Validação de ano bissexto
+let ano = parseInt(prompt("Digite um ano"));
+
+let resto = ano % 100;
+
+if (resto == 0){
+    resto = ano % 400;
+    console.log((resto == 0) ? "É ano bisexto 1" : "Não é ano bisexto 1");
+} else {
+    resto = ano % 4;
+    console.log((resto == 0) ? "É ano bisexto 2" : "Não é ano bisexto 2");
+}
