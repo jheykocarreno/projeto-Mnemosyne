@@ -154,5 +154,5 @@ const somaIdade = usuarios.reduce((soma, usuario) => soma + usuario.idade, 0);
 
 console.log("Maiores de idade " , maioresDeIdade);
 console.log("Usuario maior de idade " , usuarioMaior);
-console.log("Nomes de usuario " + nomeUsuario);
+console.log("Nomes de usuario  " + nomeUsuario);
 console.log("Soma de idades " + somaIdade);
